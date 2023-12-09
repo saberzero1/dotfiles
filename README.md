@@ -2,8 +2,8 @@
 
 ## Software
 
- - [todo](todo)
+ - [Neovim (0.9.4)](https://github.com/neovim/neovim)
 
-## submodules
+## configurations
 
- - [todo](todo)
+ - [Neovim](https://github.com/saberzero1/nvim)
