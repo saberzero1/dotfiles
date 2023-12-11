@@ -34,7 +34,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Git configs
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
-git config --global init.defaultBranch main
+git config --global init.defaultBranch master
 git config --global --add oh-my-zsh.hide-dirty 1
 git config --global --add oh-my-zsh.hide-status 1
 
