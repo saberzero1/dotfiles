@@ -5,6 +5,11 @@ if [ -d "$HOME/.cargo/bin" ] ; then
   PATH="$PATH:$HOME/.cargo/bin"
 fi
 
+# Set application path
+if [ -d "$HOME/Applications" ] ; then
+  PATH="$PATH:$HOME/Applications"
+fi
+
 # Neovim config
 git clone https://github.com/saberzero1/nvim.git ${HOME}/.config/nvim
 
