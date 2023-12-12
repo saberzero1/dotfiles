@@ -11,7 +11,7 @@ echo_info "Add your data:"
 nano ./scripts/user.sh
 source ./scripts/user.sh
 
-# Install language
+# Install languages
 bash ./scripts/languages.sh
 
 # Install applications
@@ -38,7 +38,7 @@ mkdir ${HOME}/Developer ${HOME}/Developer
 # Cleanup cached downloads and remove the installation zip and folder
 echo_info "Removing unnecessary files..."
 sudo apt -y autoremove
-rm -rf ../scripts.zip
+rm -rf ../dotfiles.zip
 rm -rf ${DOTFILES_DIRECTORY}
 
 # Finish
