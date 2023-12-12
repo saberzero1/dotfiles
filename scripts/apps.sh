@@ -35,11 +35,27 @@ sudo apt update && sudo apt install -y git
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs yarn
 
+# AppImageLauncher
+sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:appimagelauncher-team/stable
+sudo apt update && sudo apt install -y appimagelauncher
+
+# AppImage folder
+mkdir ${HOME}/Applications ${HOME}/Applications
+
+# Obsidian
+sudo wget -O ${HOME}/Applications/Obsidian.AppImage https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
+sudo chmod u+x ${HOME}/Applications/Obsidian.AppImage
+
 # Neovim
 sudo apt install -y neovim=0.9.4
 
 # Neovide (Neovim GUI)
 cargo install --git https://github.com/neovide/neovide
+
+# Helix
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update && sudo apt install -y helix
 
 # Finish
 echo_success "Finished applications installation."
