@@ -28,6 +28,9 @@ if [[ $SSH_EMAIL ]]; then
   bash ./scripts/ssh.sh
 fi
 
+# Update profile
+bash ./scripts/profile.sh
+
 # Create a directory for projects and development
 echo_info "Creating Developer directory in Home directory..."
 mkdir ${HOME}/Developer ${HOME}/Developer
