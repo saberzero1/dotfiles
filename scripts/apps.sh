@@ -46,7 +46,6 @@ mkdir ${HOME}/Applications ${HOME}/Applications
 # Obsidian
 sudo wget -O ${HOME}/Applications/Obsidian.AppImage https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
 sudo chmod u+x ${HOME}/Applications/Obsidian.AppImage
-sudo ln -s ${HOME}/Applications/Obsidian.AppImage obsidian
 
 # Neovim
 # sudo apt install -y neovim=0.9.4
