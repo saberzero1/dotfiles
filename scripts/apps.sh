@@ -46,22 +46,29 @@ mkdir ${HOME}/Applications ${HOME}/Applications
 # Obsidian
 sudo wget -O ${HOME}/Applications/Obsidian.AppImage https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
 sudo chmod u+x ${HOME}/Applications/Obsidian.AppImage
+sudo ln -s ${HOME}/Applications/Obsidian.AppImage obsidian
 
 # Neovim
 # sudo apt install -y neovim=0.9.4
-sudo wget -O ${HOME}/Applications/nvim.appimage https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
-sudo chmod u+x ${HOME}/Applications/nvim.appimage
+sudo wget -O ${HOME}/Applications/nvim.Appimage https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
+sudo chmod u+x ${HOME}/Applications/nvim.AppImage
+sudo ln -s ${HOME}/Applications/nvim.AppImage nvim
+sudo ln -s ${HOME}/Applications/nvim.AppImage vim
 
 # Neovide (Neovim GUI)
 # cargo install --git https://github.com/neovide/neovide
 sudo wget -O ${HOME}/Applications/neovide.AppImage https://github.com/neovide/neovide/releases/download/0.11.2/neovide.AppImage
 sudo chmod u+x ${HOME}/Applications/neovide.AppImage
+sudo ln -s ${HOME}/Applications/neovide.AppImage neovide
+sudo ln -s ${HOME}/Applications/neovide.AppImage neo
 
 # Helix
 # sudo add-apt-repository -y ppa:maveonair/helix-editor
 # sudo apt update && sudo apt install -y helix
 sudo wget -O ${HOME}/Applications/helix.AppImage https://github.com/helix-editor/helix/releases/download/23.10/helix-23.10-x86_64.AppImage
 sudo chmod u+x ${HOME}/Applications/helix.AppImage
+sudo ln -s ${HOME}/Applications/helix.AppImage helix
+sudo ln -s ${HOME}/Applications/helix.AppImage hx
 
 # Finish
 echo_success "Finished applications installation."
