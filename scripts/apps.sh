@@ -22,7 +22,7 @@ sudo apt install -y apt-transport-https ca-certificates curl \
     gawk ssh-askpass tree unzip wget zsh
 
 # Build dependencies
-sudo apt install -y gnupg gcc-multilib g++-multilib cmake \
+sudo apt install -y gnupg clang gcc-multilib g++-multilib cmake \
     libssl-dev pkg-config libfreetype6-dev libasound2-dev \
     libexpat1-dev libxcb-composite0-dev libbz2-dev libsndio-dev \
     freeglut3-dev libxmu-dev libxi-dev libfontconfig1-dev libxcursor-dev
@@ -52,23 +52,17 @@ sudo ln -s ${HOME}/Applications/Obsidian.AppImage obsidian
 # sudo apt install -y neovim=0.9.4
 sudo wget -O ${HOME}/Applications/nvim.Appimage https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
 sudo chmod u+x ${HOME}/Applications/nvim.AppImage
-sudo ln -s ${HOME}/Applications/nvim.AppImage nvim
-sudo ln -s ${HOME}/Applications/nvim.AppImage vim
 
 # Neovide (Neovim GUI)
 # cargo install --git https://github.com/neovide/neovide
 sudo wget -O ${HOME}/Applications/neovide.AppImage https://github.com/neovide/neovide/releases/download/0.11.2/neovide.AppImage
 sudo chmod u+x ${HOME}/Applications/neovide.AppImage
-sudo ln -s ${HOME}/Applications/neovide.AppImage neovide
-sudo ln -s ${HOME}/Applications/neovide.AppImage neo
 
 # Helix
 # sudo add-apt-repository -y ppa:maveonair/helix-editor
 # sudo apt update && sudo apt install -y helix
 sudo wget -O ${HOME}/Applications/helix.AppImage https://github.com/helix-editor/helix/releases/download/23.10/helix-23.10-x86_64.AppImage
 sudo chmod u+x ${HOME}/Applications/helix.AppImage
-sudo ln -s ${HOME}/Applications/helix.AppImage helix
-sudo ln -s ${HOME}/Applications/helix.AppImage hx
 
 # Finish
 echo_success "Finished applications installation."
