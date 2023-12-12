@@ -10,6 +10,16 @@ if [ -d "$HOME/Applications" ] ; then
   PATH="$PATH:$HOME/Applications"
 fi
 
+# Set Aliases
+cd {$HOME}/Applications
+sudo ln -s ${HOME}/Applications/nvim.AppImage nvim
+sudo ln -s ${HOME}/Applications/nvim.AppImage vim
+sudo ln -s ${HOME}/Applications/neovide.AppImage neovide
+sudo ln -s ${HOME}/Applications/neovide.AppImage neo
+sudo ln -s ${HOME}/Applications/helix.AppImage helix
+sudo ln -s ${HOME}/Applications/helix.AppImage hx
+cd {$HOME}/dotfiles
+
 # Neovim config
 git clone https://github.com/saberzero1/nvim.git ${HOME}/.config/nvim
 
