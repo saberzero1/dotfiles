@@ -20,6 +20,8 @@ _Check linked files to more details._
 
 - [apps.sh](scripts/apps.sh) - installs applications.
 - [dotfiles.sh](scripts/dotfiles.sh) - installs _Oh My Zsh_, _.zshrc_ and _Git_ configs.
+- [languages.sh](scripts/languages.sh) - installs several programming languages.
+- [profile.sh](scripts/profile.sh) - sets several .profile variables.
 - [npm.sh](scripts/npm.sh) - _Node.js_ and _npm_ settings.
 - [setup.sh](setup.sh) - main installer.
 - [ssh.sh](scripts/ssh.sh) - generate _SSH_.
