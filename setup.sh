@@ -11,6 +11,9 @@ echo_info "Add your data:"
 nano ./scripts/user.sh
 source ./scripts/user.sh
 
+# Install language
+bash ./scripts/languages.sh
+
 # Install applications
 bash ./scripts/apps.sh
 
