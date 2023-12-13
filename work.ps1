@@ -203,14 +203,16 @@ choco install wavebox -y
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+oh-my-posh font install
 
 # -----------------------------------------------------------------------------
 # Install WSL
 Write-Host ""
 Write-Host "Installing WSL..." -ForegroundColor Green
 Write-Host "------------------------------------" -ForegroundColor Green
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+wsl --install
+# Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+# Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 
 # -----------------------------------------------------------------------------
 # Restart Windows
