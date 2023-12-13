@@ -136,13 +136,14 @@ choco install sourcetree -y
 choco install git-lfs -y
 choco install gittfs -y
 choco install tfscmdlets -y
+choco install github-desktop -y
 
 # Virtualization
 choco install docker-desktop -y
 choco install docker-cli -y
 choco install docker-compose -y
 # choco install wsl2 -y
-choco install wsl -y
+# choco install wsl -y
 
 # Misc
 choco install activitywatch -y
