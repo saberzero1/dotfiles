@@ -101,6 +101,7 @@ choco install llvm -y
 
 # IDE
 choco install neovim -y
+choco install neovide -y
 choco install vscode -y
 choco install vscode-csharp -y
 choco install terraform -y
