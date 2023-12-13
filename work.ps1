@@ -131,6 +131,9 @@ choco install hashcheck -y
 choco install obsidian -y
 choco install fzf -y
 choco install grepwin -y
+
+# Metadata
+choco install activitywatch -y
 # choco install qbittorrent -y
 
 # -----------------------------------------------------------------------------
