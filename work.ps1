@@ -83,51 +83,15 @@ choco install chocolatey-core.extension -y
 choco install chocolateygui -y
 
 
-
+# Command line tools
+choco install pwsh -y
 choco install make -y
 choco install cmake -y
-
-
 choco install everything -y
 choco install curl -y
-
-
-
 choco install openssh -y
-
 choco install putty.install -y
-
-choco install anaconda3 -y
-
-choco install terraform -y
-choco install 7zip -y
-choco install wavebox -y
-
-
-choco install firacode-ttf -y
-choco install firacode -y
-choco install greenshot -y
-choco install spotify -y
-
-
-
-choco install nvm -y
-
-choco install docker-compose -y
-choco install pwsh -y
-
 choco install winscp -y
-
-choco install hugo-extended -y
-choco install ripgrep -y
-choco install logparser -y
-choco install selenium -y
-choco install sass -y
-choco install autoit -y
-choco install hashcheck -y
-choco install obsidian -y
-choco install fzf -y
-choco install grepwin -y
 
 # Programming languages & compilers
 choco install rust -y
@@ -140,9 +104,10 @@ choco install llvm -y
 choco install neovim -y
 choco install vscode -y
 choco install vscode-csharp -y
+choco install terraform -y
 
 # Scripting
-
+choco install anaconda3 -y
 choco install powertoys -y
 choco install autohotkey -y
 
@@ -153,9 +118,19 @@ choco install windirstat -y
 choco install pandoc -y
 choco install dotpeek -y
 choco install rufus -y
+choco install fzf -y
+choco install grepwin -y
+choco install ripgrep -y
+choco install 7zip -y
+choco install sass -y
+choco install hugo-extended -y
+choco install logparser -y
+choco install autoit -y
+choco install hashcheck -y
+choco install nvm -y
+choco install selenium -y
 
 # Version control
-
 choco install gh -y
 choco install sourcetree -y
 choco install git-lfs -y
@@ -165,11 +140,20 @@ choco install tfscmdlets -y
 # Virtualization
 choco install docker-desktop -y
 choco install docker-cli -y
-choco install wsl2 -y
+choco install docker-compose -y
+# choco install wsl2 -y
+choco install wsl -y
 
-# Metadata
+# Misc
 choco install activitywatch -y
-# choco install qbittorrent -y
+choco install firacode-ttf -y
+choco install firacode -y
+
+# Software
+choco install obsidian -y
+choco install spotify -y
+choco install greenshot -y
+choco install wavebox -y
 
 # -----------------------------------------------------------------------------
 # Enable PUA Protection in Windows Defender
