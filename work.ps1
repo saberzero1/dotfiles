@@ -82,7 +82,6 @@ else {
 choco install chocolatey-core.extension -y
 choco install chocolateygui -y
 
-
 # Command line tools
 choco install pwsh -y
 choco install make -y
