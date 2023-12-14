@@ -149,6 +149,7 @@ choco install docker-compose -y
 choco install activitywatch -y
 choco install firacode-ttf -y
 choco install firacode -y
+choco install winget -y
 
 # Software
 choco install obsidian -y
