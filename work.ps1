@@ -98,6 +98,7 @@ choco install python3 -y
 choco install ruby -y
 choco install golang -y
 choco install llvm -y
+choco install javaruntime -y
 
 # IDE
 choco install neovim -y
