@@ -1,0 +1,6 @@
+[submodule "croire"]
+	path = croire
+	url = https://github.com/saberzero1/croire.git
+[submodule "shelter"]
+	path = shelter
+	url = https://github.com/saberzero1/shelter.git
