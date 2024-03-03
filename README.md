@@ -6,5 +6,5 @@
 ## Updating submodules:
 
 ```bash
-git submodule update --remote
+git submodule update --init --remote
 ```
