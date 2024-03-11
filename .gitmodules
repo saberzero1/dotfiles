@@ -4,3 +4,6 @@
 [submodule "shelter"]
 	path = shelter
 	url = https://github.com/saberzero1/shelter.git
+[submodule "totten"]
+	path = totten
+	url = https://github.com/saberzero1/totten.git
