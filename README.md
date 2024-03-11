@@ -1,9 +1,9 @@
 # dotfiles
 
- - [croire](./croire/): NixOs configuration.
- - [martina](./martina/): Keyboard configuration.
- - [shelter](./shelter/): Neovim configuration.
- - [totten](./totten/): Espanso configuration.
+ - [croire](https://github.com/saberzero1/croire/tree/main): NixOs configuration.
+ - [martina](https://github.com/saberzero1/martina/tree/master): Keyboard configuration.
+ - [shelter](https://github.com/saberzero1/shelter/tree/master): Neovim configuration.
+ - [totten](https://github.com/saberzero1/totten/tree/master): Espanso configuration.
 
 ## Updating submodules:
 
