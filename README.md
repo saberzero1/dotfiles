@@ -1,7 +1,9 @@
 # dotfiles
 
  - [croire](./croire/): NixOs configuration.
+ - [martina](./martina/): Keyboard configuration.
  - [shelter](./shelter/): Neovim configuration.
+ - [totten](./totten/): Espanso configuration.
 
 ## Updating submodules:
 
