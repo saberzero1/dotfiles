@@ -24,10 +24,10 @@
 
  - [Totten](https://github.com/saberzero1/totten/tree/master): Espanso configuration.
 
-## Updating package versions
+## Updating package versions (flakes)
 
 ```bash
-sudo nixos-rebuild switch --upgrade
+nix flake update
 ```
 
 ## Updating submodules:
