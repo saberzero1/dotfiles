@@ -24,6 +24,12 @@
 
  - [Totten](https://github.com/saberzero1/totten/tree/master): Espanso configuration.
 
+## Updating package versions
+
+```bash
+sudo nixos-rebuild switch --upgrade
+```
+
 ## Updating submodules:
 
 ```bash
@@ -34,7 +40,15 @@ git submodule update --init --remote --recursive
 
 ```bash
 sudo nixos-rebuild build --flake ./croire/. --impure
+sudo nixos-rebuild test --flake ./croire/. --impure
+sudo nixos-rebuild switch --flake ./croire/. --impure
 ```
 
  > [!WARNING]
  > `--impure` for now as I convert my Neovim configuration to [NixVim](https://github.com/nix-community/nixvim).
+
+## Garbage collect
+
+```bash
+nix-collect-garbage -d
+```
