@@ -6,6 +6,12 @@
 
  - [Croire](https://github.com/saberzero1/croire/tree/main): NixOs configuration.
 
+## Jackson
+
+<a href="https://github.com/saberzero1/jackson/tree/master"><img src="https://github.com/saberzero1/jackson/blob/master/Jackson3.png"></a>
+
+ - [Jackson](https://github.com/saberzero1/jackson/tree/master): Miscellaneous configuration.
+
 ## Martina
 
 <a href="https://github.com/saberzero1/martina/tree/master"><img src="https://github.com/saberzero1/martina/blob/master/Martina3.png"></a>
@@ -23,12 +29,6 @@
 <a href="https://github.com/saberzero1/totten/tree/master"><img src="https://github.com/saberzero1/totten/blob/master/Totten3.png"></a>
 
  - [Totten](https://github.com/saberzero1/totten/tree/master): Espanso configuration.
-
-## Jackson
-
-<a href="https://github.com/saberzero1/jackson/tree/master"><img src="https://github.com/saberzero1/jackson/blob/master/Jackson3.png"></a>
-
- - [Jackson](https://github.com/saberzero1/jackson/tree/master): Miscellaneous configuration.
 
 ## Updating package versions (flakes)
 
