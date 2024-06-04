@@ -24,6 +24,12 @@
 
  - [Totten](https://github.com/saberzero1/totten/tree/master): Espanso configuration.
 
+## Jackson
+
+<a href="https://github.com/saberzero1/jackson/tree/master"><img src="https://github.com/saberzero1/jackson/blob/master/Jackson3.png"></a>
+
+ - [Jackson](https://github.com/saberzero1/jackson/tree/master): Miscellaneous configuration.
+
 ## Updating package versions (flakes)
 
 ```bash
