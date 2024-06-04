@@ -10,3 +10,6 @@
 [submodule "martina"]
 	path = martina
 	url = https://github.com/saberzero1/martina.git
+[submodule "jackson"]
+	path = jackson
+	url = https://github.com/saberzero1/jackson.git
