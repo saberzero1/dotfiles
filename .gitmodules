@@ -1,15 +1,20 @@
 [submodule "croire"]
 	path = croire
 	url = https://github.com/saberzero1/croire.git
+	branch = main
 [submodule "shelter"]
 	path = shelter
 	url = https://github.com/saberzero1/shelter.git
+	branch = master
 [submodule "totten"]
 	path = totten
 	url = https://github.com/saberzero1/totten.git
+	branch = master
 [submodule "martina"]
 	path = martina
 	url = https://github.com/saberzero1/martina.git
+	branch = master
 [submodule "jackson"]
 	path = jackson
 	url = https://github.com/saberzero1/jackson.git
+	branch = master
