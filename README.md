@@ -46,7 +46,13 @@ git submodule update --init --remote --recursive
 
 ```bash
 sudo nixos-rebuild build --flake ./croire/. --impure
+```
+
+```bash
 sudo nixos-rebuild test --flake ./croire/. --impure
+```
+
+```bash
 sudo nixos-rebuild switch --flake ./croire/. --impure
 ```
 
