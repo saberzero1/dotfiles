@@ -64,3 +64,17 @@ sudo nixos-rebuild switch --flake ./croire/. --impure
 ```bash
 nix-collect-garbage -d
 ```
+
+## Common fixes
+
+> Please do one of the following:
+> - Move or remove the above files and try again.
+> - In standalone mode, use 'home-manager switch -b backup' to back up
+>   files automatically.
+> - When used as a NixOS or nix-darwin module, set
+>     'home-manager.backupFileExtension'
+>   to, for example, 'backup' and rebuild.
+
+```bash
+rm ~/.config/mimeapps.list
+```
