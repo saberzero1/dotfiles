@@ -78,3 +78,6 @@ nix-collect-garbage -d
 ```bash
 rm ~/.config/mimeapps.list
 ```
+```bash
+# https://github.com/nix-community/home-manager/issues/1140
+```
