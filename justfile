@@ -8,21 +8,29 @@
 ############################################################################
 
 fetch:
+  # Fetch all submodules
   git submodule update --init --remote --recursive
 
 build:
+  # Build all submodules into NixOS configurations
   sudo nixos-rebuild build --flake ./croire/. --impure --use-remote-sudo
 
 test:
+  # Test all submodules into NixOS configurations
   sudo nixos-rebuild test --flake ./croire/. --impure --use-remote-sudo
 
 switch:
+  # Switch to built configurations
   sudo nixos-rebuild switch --flake ./croire/. --impure --use-remote-sudo
 
+all: fetch build test switch
+
 debug:
+  # Debug NixOS configurations
   nixos-rebuild switch --flake ./croire/. --impure --use-remote-sudo --show-trace --verbose --option eval-cache false
 
 update:
+  # Update flake.lock
   nix flake update
 
 # Update specific input
@@ -52,11 +60,7 @@ optimize:
   # hard link nix stores
   sudo nix store optimise
 
-clean-all:
-  sudo nix-collect-garbage -d
-  sudo nix store optimise
-  sudo nix-collect-garbage -d
-  sudo /run/current-system/bin/switch-to-configuration boot
+clean-all: gc optimize gc clean
 
 ############################################################################
 #
