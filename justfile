@@ -62,6 +62,10 @@ optimize:
 
 clean-all: gc optimize gc clean
 
+# Commiting
+commit:
+  git commit -a -m "Updated Submodules"
+
 ############################################################################
 #
 #  Idols, Commands related to my remote distributed building cluster
