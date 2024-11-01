@@ -9,7 +9,7 @@
 
 force:
   # Force update all submodules
-  sudo git submodule update --init -remote --recursive --force
+  sudo git submodule update --init --remote --recursive --force
 
 fetch:
   # Fetch all submodules
