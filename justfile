@@ -53,8 +53,12 @@ clean-old:
   sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
 
 gc:
-  # garbage collect all unused nix store entries
+  # garbage collect all unused system nix store entries
   sudo nix-collect-garbage -d
+
+gc-user:
+  # garbage collect all unused user nix store entries
+  nix-collect-garbage -d
 
 clean:
   # remove all old generations from boot
