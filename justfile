@@ -68,7 +68,7 @@ optimize:
   # hard link nix stores
   sudo nix store optimise
 
-clean-all: gc optimize gc clean
+clean-all: gc gc-user optimize gc gc-user clean
 
 # Commiting
 commit:
