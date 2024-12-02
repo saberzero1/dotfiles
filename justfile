@@ -65,10 +65,14 @@ clean:
   sudo /run/current-system/bin/switch-to-configuration boot
 
 optimize:
-  # hard link nix stores
+  # hard link system nix stores
   sudo nix store optimise
 
-clean-all: gc gc-user optimize gc gc-user clean
+optimize-user:
+  # hard link user nix stores
+  nix store optimise
+
+clean-all: gc gc-user optimize optimize-user gc gc-user clean
 
 # Commiting
 commit:
