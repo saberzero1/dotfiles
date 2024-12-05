@@ -7,26 +7,49 @@
 #
 ############################################################################
 
+[linux]
 force:
   # Force update all submodules
   sudo git submodule update --init --remote --recursive --force
+
+[macos]
+force:
+  # Force update all submodules
+  git submodule update --init --remote --recursive --force
 
 fetch:
   # Fetch all submodules
   git submodule update --init --remote --recursive
 
+[macos]
+build:
+  # Build all submodules into NixOS configurations
+  sudo -s -u $(whoami) darwin-rebuild build --flake ./croire/. --impure
+
+[linux]
 build:
   # Build all submodules into NixOS configurations
   sudo nixos-rebuild build --flake ./croire/. --impure --use-remote-sudo
 
+[linux]
 test:
   # Test all submodules into NixOS configurations
   sudo nixos-rebuild test --flake ./croire/. --impure --use-remote-sudo
 
+[macos]
+switch:
+  # Switch to built configurations
+  sudo -s -u $(whoami) darwin-rebuild build --flake croire/. --impure
+
+[linux]
 switch:
   # Switch to built configurations
   sudo nixos-rebuild switch --flake ./croire/. --impure --use-remote-sudo
 
+[macos]
+all: fetch build switch
+
+[linux]
 all: fetch build test switch
 
 debug:
@@ -48,30 +71,40 @@ history:
 repl:
   nix repl -f flake:nixpkgs
 
+[unix]
 clean-old:
   # remove all generations older than 7 days
   sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
 
+[unix]
 gc:
   # garbage collect all unused system nix store entries
   sudo nix-collect-garbage -d
 
+[unix]
 gc-user:
   # garbage collect all unused user nix store entries
   nix-collect-garbage -d
 
+[unix]
 clean:
   # remove all old generations from boot
   sudo /run/current-system/bin/switch-to-configuration boot
 
+[unix]
 optimize:
   # hard link system nix stores
   sudo nix store optimise
 
+[unix]
 optimize-user:
   # hard link user nix stores
   nix store optimise
 
+[macos]
+clean-all: gc gc-user optimize optimize-user gc gc-user
+
+[linux]
 clean-all: gc gc-user optimize optimize-user gc gc-user clean
 
 # Commiting
