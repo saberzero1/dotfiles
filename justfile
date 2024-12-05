@@ -76,10 +76,15 @@ clean-old:
   # remove all generations older than 7 days
   sudo nix profile wipe-history --profile /nix/var/nix/profiles/system  --older-than 7d
 
-[unix]
+[linux]
 gc:
   # garbage collect all unused system nix store entries
   sudo nix-collect-garbage -d
+
+[macos]
+gc:
+  # garbage collect all unused system nix store entries
+  sudo -s -u $(whoami) nix-collect-garbage -d
 
 [unix]
 gc-user:
@@ -91,7 +96,12 @@ clean:
   # remove all old generations from boot
   sudo /run/current-system/bin/switch-to-configuration boot
 
-[unix]
+[macos]
+optimize:
+  # hard link system nix stores
+  sudo -s -u $(whoami) nix store optimise
+
+[linux]
 optimize:
   # hard link system nix stores
   sudo nix store optimise
