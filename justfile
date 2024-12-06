@@ -39,7 +39,7 @@ test:
 [macos]
 switch:
   # Switch to built configurations
-  sudo -s -u $(whoami) darwin-rebuild build --flake croire/. --impure
+  sudo -s -u $(whoami) darwin-rebuild switch --flake ./croire/. --impure
 
 [linux]
 switch:
